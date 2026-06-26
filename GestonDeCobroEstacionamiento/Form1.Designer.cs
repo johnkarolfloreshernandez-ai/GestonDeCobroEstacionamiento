@@ -95,9 +95,9 @@
             this.lblDescripcionTarifa.AutoSize = true;
             this.lblDescripcionTarifa.Location = new System.Drawing.Point(44, 136);
             this.lblDescripcionTarifa.Name = "lblDescripcionTarifa";
-            this.lblDescripcionTarifa.Size = new System.Drawing.Size(35, 13);
+            this.lblDescripcionTarifa.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcionTarifa.TabIndex = 7;
-            this.lblDescripcionTarifa.Text = "label2";
+            this.lblDescripcionTarifa.Text = "Descripcion";
             this.lblDescripcionTarifa.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
