@@ -17,7 +17,7 @@ namespace GestonDeCobroEstacionamiento
 
         public override double CalcularTarifa()
         {
-            return HorasEstancia * 30;
+            return Horas * 30;
         }
     }
 

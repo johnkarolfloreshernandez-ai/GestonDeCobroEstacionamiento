@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestonDeCobroEstacionamiento
 {
-    class Motocicleta : Veiculo
+        public class Motocicleta : Vehiculo
     {
         public int Cilindrada { get; set; }
         public Motocicleta(int horas, int cilindrada) : base(horas)
@@ -14,7 +14,7 @@ namespace GestonDeCobroEstacionamiento
             Cilindrada = cilindrada;
         }
 
-        public override double CalcularTrifa()
+        public override double CalcularTarifa()
         {
             return Horas * 15;
         }
