@@ -8,7 +8,7 @@ namespace GestonDeCobroEstacionamiento
 {
     public class Camioneta : Vehiculo
     {
-        public int NumeroEjes { get; set; }
+        public int NumeroEjes { get; set; }  
 
         public Camioneta(int horas, int numeroEjes) : base(horas)
         {
@@ -19,6 +19,5 @@ namespace GestonDeCobroEstacionamiento
         {
             return Horas * 45;
         }
-
     }
 }
