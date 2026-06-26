@@ -21,6 +21,8 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblVehiculo = new System.Windows.Forms.Label();
             this.lblHoras = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblDescripcionTarifa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbVehiculo
@@ -45,7 +47,7 @@
             // btnCalcular
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.Lime;
-            this.btnCalcular.Location = new System.Drawing.Point(129, 105);
+            this.btnCalcular.Location = new System.Drawing.Point(37, 98);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(129, 26);
             this.btnCalcular.TabIndex = 2;
@@ -56,7 +58,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(129, 147);
+            this.lblTotal.Location = new System.Drawing.Point(44, 161);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(49, 13);
             this.lblTotal.TabIndex = 3;
@@ -80,12 +82,32 @@
             this.lblHoras.TabIndex = 5;
             this.lblHoras.Text = "Horas de estancia:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(34, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 6;
+            // 
+            // lblDescripcionTarifa
+            // 
+            this.lblDescripcionTarifa.AutoSize = true;
+            this.lblDescripcionTarifa.Location = new System.Drawing.Point(44, 136);
+            this.lblDescripcionTarifa.Name = "lblDescripcionTarifa";
+            this.lblDescripcionTarifa.Size = new System.Drawing.Size(35, 13);
+            this.lblDescripcionTarifa.TabIndex = 7;
+            this.lblDescripcionTarifa.Text = "label2";
+            this.lblDescripcionTarifa.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(323, 199);
+            this.Controls.Add(this.lblDescripcionTarifa);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbVehiculo);
             this.Controls.Add(this.txtHoras);
             this.Controls.Add(this.btnCalcular);
@@ -105,6 +127,8 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblVehiculo;
         private System.Windows.Forms.Label lblHoras;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDescripcionTarifa;
     }
 }
 
